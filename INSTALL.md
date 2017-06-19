@@ -148,28 +148,23 @@ All current versions of Semantic Maps have full support for all databases that c
 
 ## Download and installation
 
-The recommended way to download and install Semantic Maps is with [Composer](http://getcomposer.org) using
-[MediaWiki 1.22 built-in support for Composer](https://www.mediawiki.org/wiki/Composer).
+This version of SemanticMaps extension has been ported for MediaWiki >= 1.27, now the extension can be delivered in a single archive file and can be activated by wfLoadExtension.
 
-Note that the [Semantic MediaWiki](https://www.semantic-mediawiki.org/wiki/Help:Installation) extension as
-well as the  [Maps](https://github.com/JeroenDeDauw/Maps/blob/master/docs/INSTALL.md) extension need
-to be installed first for this extension to work.
+### Install from github
 
 #### Step 1
 
 Go to the root directory of your MediaWiki installation.
 
-If you have previously installed Composer skip to step 2.
-
-To install Composer run:
-
-    wget http://getcomposer.org/composer.phar
+   git clone https://github.com/SemanticMediaWiki/SemanticMaps.git extensions/SemanticMaps
+	 cd extensions/SemanticMaps
+	 composer update
 
 #### Step 2
 
-Now using Composer, install Semantic Maps by running
+Activate extension in LocalSettings by adding:
 
-    php composer.phar require mediawiki/semantic-maps "*"
+    wfLoadExtension('SemanticMaps');
 
 #### Verify installation success
 
