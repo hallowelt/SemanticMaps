@@ -156,9 +156,9 @@ This version of SemanticMaps extension has been ported for MediaWiki >= 1.27, no
 
 Go to the root directory of your MediaWiki installation.
 
-   git clone https://github.com/SemanticMediaWiki/SemanticMaps.git extensions/SemanticMaps
-	 cd extensions/SemanticMaps
-	 composer update
+    git clone https://github.com/hallowelt/SemanticMaps.git extensions/SemanticMaps
+    cd extensions/SemanticMaps
+    composer update
 
 #### Step 2
 
